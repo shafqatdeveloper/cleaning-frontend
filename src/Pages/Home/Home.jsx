@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../../Components/Home/Hero'
 import About from '../../Components/Home/About'
+import Services from '../../Components/Home/Services'
+import Stats from '../../Components/Home/Stats'
 
 const Home = () => {
     return (
@@ -10,6 +12,8 @@ const Home = () => {
             <div className="absolute inset-0 bg-white opacity-80 z-10"></div>
             <Hero/>
             <About/>
+            <Services/>
+            <Stats/>
         </div>
     )
 }
