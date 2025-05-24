@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative h-screen z-20 text-center pt-20 flex flex-col items-center">
       <h1 className='bg-[#d3ebfc] mt-5 px-5 text-secondary-blue font-semibold py-1 rounded-full'>ZUVERLÄSSIGE REINIGUNG</h1>
-      <h1 className='text-6xl mt-7 font-semibold text-gray-700'>Firmenname</h1>
+      <h1 className='text-6xl mt-7 font-bold text-gray-700'>Rapid24</h1>
       <p className='w-full px-4 sm:w-3/4 md:w-2/4 mt-10 text-lg text-gray-600'>
         Genießen Sie einen makellosen Raum mit unserem professionellen Reinigungsteam. Erschwinglich, umweltfreundlich und auf Ihre Bedürfnisse zugeschnitten!
       </p>
