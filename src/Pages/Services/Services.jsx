@@ -1,9 +1,12 @@
 import React from 'react'
+import Services from '../../Components/Home/Services'
 
-const Services = () => {
+const ServicesPage = () => {
   return (
-    <div>Services</div>
+    <div className='pt-32'>
+      <Services/>
+    </div>
   )
 }
 
-export default Services
+export default ServicesPage
