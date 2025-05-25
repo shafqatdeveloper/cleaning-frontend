@@ -21,8 +21,8 @@ const Navbar = () => {
         { name: 'startseite', path: '/' },
         { name: 'dienstleistungen', path: '/services' },
         { name: 'über uns', path: '/about' },
-        { name: 'projekte', path: '/projects' },
         { name: 'kontakt', path: '/contact' },
+        { name: 'Jetzt beitreten', path: '/join-team' },
     ];
 
     const location = useLocation();
@@ -33,10 +33,10 @@ const Navbar = () => {
                 }`}
         >
             <Link>
-            <img src={logoPng} alt="Rapid24" className='w-16' />
+                <img src={logoPng} alt="Rapid24" className='w-16' />
             </Link>
             {/* Desktop */}
-            <div className='hidden lg:flex items-center gap-10'>
+            <div className='hidden xl:flex items-center gap-10'>
                 {navLinks.map((navLink, i) => (
                     <Link
                         key={i}
@@ -47,11 +47,11 @@ const Navbar = () => {
                     </Link>
                 ))}
             </div>
-            <div className='hidden lg:flex items-center gap-5'>
+            <div className='hidden xl:flex items-center gap-5'>
                 <div className='flex flex-col items-center'>
-                    <Link to={'tel:+015569035175'} className='flex items-center gap-2'>
+                    <Link to={'tel:+4915569035175'} className='flex items-center gap-2'>
                         <FaPhone size={20} className='text-secondary-blue' />
-                        <span className='font-medium text-gray-800'>+015569035175</span>
+                        <span className='font-medium text-gray-800'>+4915569035175</span>
                     </Link>
                 </div>
                 <div>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* Mobile */}
-            <div className={`lg:hidden z-50 text-gray-700 p-1.5 ${isNavOpen && 'bg-primary-blue rounded-md px-2 py-1.5 text-white'}`}>
+            <div className={`xl:hidden z-50 text-gray-700 p-1.5 ${isNavOpen && 'bg-primary-blue rounded-md px-2 py-1.5 text-white'}`}>
                 <button onClick={() => setIsNavOpen(!isNavOpen)}><RiMenu3Fill size={22} /></button>
             </div>
             {

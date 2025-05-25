@@ -7,7 +7,7 @@ import logoPng from '../assets/logo.png'
 
 const Footer = () => {
   return (
-    <div className='bg-dark-blue w-full text-white px-4 py-8 lg:py-16'>
+    <div className='bg-dark-blue w-full text-white px-4 py-8 lg:py-16 z-20'>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 sm:gap-5'>
         {/* Logo Side */}
         <div className='flex flex-col gap-4'>
@@ -21,7 +21,7 @@ const Footer = () => {
             <Link to={'https://facebook.com'}><FaFacebookF size={20} /></Link>
             <Link to={'https://facebook.com'}><FaWhatsapp size={20} /></Link>
             <Link to={'https://facebook.com'}><FaInstagram size={20} /></Link>
-            <Link to={'tel:+015569035175'}><FaPhoneAlt size={20} /></Link>
+            <Link to={'tel:+4915569035175'}><FaPhoneAlt size={20} /></Link>
           </div>
         </div>
         <div>

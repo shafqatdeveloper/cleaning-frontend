@@ -1,87 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import residentialCleaningPic from '../../assets/residentialCleaning.jpg';
-import commercialCleaningPic from '../../assets/commercialCleaning.jpg';
-import deepCleaningPic from '../../assets/deepCleaning.jpg';
-import moveInOutCleaningPic from '../../assets/moveInOutCleaning.jpg';
-import constructionCleaningPic from '../../assets/constructionCleaning.jpg';
-import CarpetCleaningPic from '../../assets/CarpetCleaning.jpg';
 import { FaUserTie, FaRegCalendarCheck, FaRegThumbsUp, FaLeaf } from "react-icons/fa6";
-
-const servicesOffered = [
-  { 
-    title: "Wohnungsreinigung", 
-    link: "/book-service?selectedService=wohnungsreinigung",
-    pic: residentialCleaningPic, 
-    description: "Allgemeine Reinigung von Wohnungen, einschließlich Staubwischen, Staubsaugen, Wischen und Aufräumen von Wohnbereichen, Schlafzimmern, Badezimmern und Küchen." 
-  },
-  { 
-    title: "Gewerbliche Reinigung", 
-    link: "/book-service?selectedService=gewerbliche-reinigung",
-    pic: commercialCleaningPic, 
-    description: "Reinigung von Büroräumen, einschließlich Schreibtischen, Böden, Pausenräumen, Toiletten und Gemeinschaftsbereichen, um ein professionelles Umfeld zu gewährleisten." 
-  },
-  { 
-    title: "Tiefenreinigung", 
-    link: "/book-service?selectedService=tiefenreinigung",
-    pic: deepCleaningPic, 
-    description: "Gründliche Reinigung des gesamten Objekts, einschließlich schwer zugänglicher Bereiche, Geräte, Fußleisten und Fugen." 
-  },
-  { 
-    title: "Ein- & Auszugsreinigung", 
-    link: "/book-service?selectedService=ein-auszugsreinigung",
-    pic: moveInOutCleaningPic, 
-    description: "Spezielle Reinigung für Wohnungen/Häuser, die bezogen oder verlassen werden, mit Fokus auf das Entfernen von Schmutz, Flecken und Rückständen." 
-  },
-  { 
-    title: "Baureinigung", 
-    link: "/book-service?selectedService=baureinigung",
-    pic: constructionCleaningPic, 
-    description: "Entfernung von Staub, Schutt und Baumaterialien nach Renovierungs- oder Neubauprojekten, um den Raum nutzbar zu machen." 
-  },
-  { 
-    title: "Teppich- & Polsterreinigung", 
-    link: "/book-service?selectedService=teppich-polsterreinigung",
-    pic: CarpetCleaningPic, 
-    description: "Tiefenreinigung und Fleckenentfernung von Teppichen, Vorlegern und Polstermöbeln mit Spezialgeräten." 
-  },
-];
+import hotelHousekeepingPic from '../../assets/hotelHousekeeping.jpg'
+import dishwasherPic from '../../assets/dishwasher.jpg'
 
 const featuresData = [
   {
     icon: <FaUserTie size={40} className="text-white" />,
-    title: "Professionelles Team",
-    description: "Unsere geschulten, versicherten Reinigungskräfte sorgen für einen professionellen und vertrauenswürdigen Service mit einwandfreien Ergebnissen.",
+    title: "Professional Team",
+    description: "Our trained and insured cleaning staff ensure a professional and reliable service with impeccable results.",
   },
   {
     icon: <FaRegCalendarCheck size={40} className="text-white" />,
-    title: "Pünktlicher Service",
-    description: "Zuverlässiger, pünktlicher Service, der Ihren Zeitplan respektiert und Ihre Erwartungen übertrifft.",
+    title: "Punctual Service",
+    description: "Reliable, punctual service that respects your schedule and exceeds expectations.",
   },
   {
     icon: <FaRegThumbsUp size={40} className="text-white" />,
-    title: "Transparente Preise",
-    description: "Erschwingliche, transparente Preise ohne versteckte Kosten — Qualitätsreinigung zum fairen Preis.",
+    title: "Transparent Pricing",
+    description: "Affordable, transparent pricing with no hidden costs — quality cleaning at a fair price.",
   },
   {
     icon: <FaLeaf size={40} className="text-white" />,
-    title: "Umweltfreundlich",
-    description: "Wir verwenden ungiftige, umweltfreundliche Produkte für ein sicheres, gesundes und funkelndes Zuhause.",
+    title: "Eco-Friendly",
+    description: "We use non-toxic, eco-friendly products for a safe, healthy, and sparkling environment.",
   },
 ];
+
+const mainServices = [
+  {title:"Hotelreinigung (Housekeeping)",description:"Unsere Fachkräfte übernehmen die tägliche Reinigung von Hotelzimmern, öffentlichen Bereichen und Sanitäranlagen. Wir sorgen für Sauberkeit, Komfort und Hygiene, um die Zufriedenheit Ihrer Gäste sicherzustellen.",pic:hotelHousekeepingPic},
+  {title:"Spülküche in Hotels",description:"Unser erfahrenes Personal übernimmt zuverlässig die Reinigung von Geschirr, Besteck und Küchenutensilien. Wir garantieren einen reibungslosen Ablauf in der Hotelküche und arbeiten effizient auch unter Zeitdruck.",pic:dishwasherPic}
+]
 
 const Services = () => {
   return (
     <div className='w-full flex flex-col items-center mt-20 px-5 md:px-10'>
-      <h1 className='bg-primary-blue w-max px-2.5 py-0.5 mt-5 lg:mt-0 rounded-full font-semibold text-white text-center'>UNSERE DIENSTLEISTUNGEN</h1>
-      <h1 className='text-2xl font-semibold mt-5 sm:text-3xl lg:text-4xl text-gray-700'>Unsere Reinigungsdienste</h1>
+      <h1 className='bg-primary-blue w-max px-2.5 py-0.5 mt-5 lg:mt-0 rounded-full font-semibold text-white text-center'>OUR SERVICES</h1>
+      <h1 className='text-2xl font-semibold mt-5 sm:text-3xl lg:text-4xl text-gray-700'>Our Cleaning Services</h1>
       <p className='mt-5 text-gray-400 font-medium w-11/12 sm:w-3/4 md:w-2/4 text-center'>
-        Ob schnelle Auffrischung oder gründliche Reinigung — unser Expertenteam bringt Ihr Zuhause oder Büro zum Strahlen.
+        We are a professional cleaning company with extensive experience in the cleaning industry. Our staff is well-trained, reliable, and committed to meeting the highest standards in all areas of cleaning. We offer a wide range of services for residential, commercial, and industrial clients. Each service is performed with utmost care and professionalism.
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 mt-10'>
-        {servicesOffered.map((service, index) => (
+      <h1 className='mt-10 text-3xl font-semibold text-gray-50 bg-primary-blue px-4 py-2.5 rounded-full'>Our main Services</h1>
+      <div className='flex items-center justify-center w-full'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-10 mt-10'>
+        {mainServices.map((service, index) => (
           <div key={index} className=''>
-            <Link to={service.link}>
+            <Link>
               <div className='overflow-hidden rounded-xl'>
                 <img
                   src={service?.pic}
@@ -94,6 +58,7 @@ const Services = () => {
             <p className='text-gray-500 text-justify'>{service.description}</p>
           </div>
         ))}
+      </div>
       </div>
       <div className='py-20 my-24 grid grid-cols-1 sm:grid-cols-2 rounded-md lg:grid-cols-4 gap-x-5 gap-y-10 bg-[#f4f4f4] px-2'>
         {featuresData.map((feature, index) => (
