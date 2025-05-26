@@ -29,38 +29,39 @@ const featuresData = [
 ];
 
 const mainServices = [
-  {title:"Hotelreinigung (Housekeeping)",description:"Unsere Fachkräfte übernehmen die tägliche Reinigung von Hotelzimmern, öffentlichen Bereichen und Sanitäranlagen. Wir sorgen für Sauberkeit, Komfort und Hygiene, um die Zufriedenheit Ihrer Gäste sicherzustellen.",pic:hotelHousekeepingPic},
-  {title:"Spülküche in Hotels",description:"Unser erfahrenes Personal übernimmt zuverlässig die Reinigung von Geschirr, Besteck und Küchenutensilien. Wir garantieren einen reibungslosen Ablauf in der Hotelküche und arbeiten effizient auch unter Zeitdruck.",pic:dishwasherPic}
+  { title: "Hotelreinigung (Housekeeping)", description: "Unsere Fachkräfte übernehmen die tägliche Reinigung von Hotelzimmern, öffentlichen Bereichen und Sanitäranlagen. Wir sorgen für Sauberkeit, Komfort und Hygiene, um die Zufriedenheit Ihrer Gäste sicherzustellen.", pic: hotelHousekeepingPic },
+  { title: "Spülküche in Hotels", description: "Unser erfahrenes Personal übernimmt zuverlässig die Reinigung von Geschirr, Besteck und Küchenutensilien. Wir garantieren einen reibungslosen Ablauf in der Hotelküche und arbeiten effizient auch unter Zeitdruck.", pic: dishwasherPic }
 ]
 
 const Services = () => {
   return (
     <div className='w-full flex flex-col items-center mt-20 px-5 md:px-10'>
-<h1 className='mt-10 text-xl font-semibold text-gray-50 bg-primary-blue px-4 py-0.5 rounded-full'>Our main Services</h1>
+      <h1 className='mt-10 text-xl font-semibold text-gray-50 bg-primary-blue px-4 py-0.5 rounded-full'>Unsere Hauptdienstleistungen</h1>
       <p className='mt-5 text-gray-400 font-medium w-11/12 sm:w-3/4 md:w-2/4 text-center'>
-        We are a professional cleaning company with extensive experience in the cleaning industry. Our staff is well-trained, reliable, and committed to meeting the highest standards in all areas of cleaning. We offer a wide range of services for residential, commercial, and industrial clients. Each service is performed with utmost care and professionalism.
+        Wir sind ein professionelles Reinigungsunternehmen mit umfangreicher Erfahrung in der Reinigungsbranche. Unser Team ist gut ausgebildet, zuverlässig und engagiert, um in allen Bereichen der Reinigung höchste Standards zu erfüllen. Wir bieten ein breites Spektrum an Dienstleistungen für private, gewerbliche und industrielle Kunden an – jede wird mit größter Sorgfalt und Professionalität durchgeführt.
       </p>
-      
+
+
       <div className='flex items-center justify-center w-full'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-10 mt-10'>
-        {mainServices.map((service, index) => (
-          <div key={index} className=''>
-            <Link>
-              <div className='overflow-hidden rounded-xl'>
-                <img
-                  src={service?.pic}
-                  alt={service.title}
-                  className='cursor-pointer hover:scale-[115%] transition-all duration-500'
-                />
-              </div>
-            </Link>
-            <h1 className='mt-5 mb-3 text-2xl font-semibold text-gray-700'>{service.title}</h1>
-            <p className='text-gray-500 text-justify'>{service.description}</p>
-          </div>
-        ))}
+          {mainServices.map((service, index) => (
+            <div key={index} className=''>
+              <Link>
+                <div className='overflow-hidden rounded-xl'>
+                  <img
+                    src={service?.pic}
+                    alt={service.title}
+                    className='cursor-pointer hover:scale-[115%] transition-all duration-500'
+                  />
+                </div>
+              </Link>
+              <h1 className='mt-5 mb-3 text-2xl font-semibold text-gray-700'>{service.title}</h1>
+              <p className='text-gray-500 text-justify'>{service.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      </div>
-      <ResidentialCleaning/>
+      <ResidentialCleaning />
       <div className='py-20 my-24 grid grid-cols-1 sm:grid-cols-2 rounded-md lg:grid-cols-4 gap-x-5 gap-y-10 bg-[#f4f4f4] px-2'>
         {featuresData.map((feature, index) => (
           <div key={index} className='flex flex-col items-center'>
