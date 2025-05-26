@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaUserTie, FaRegCalendarCheck, FaRegThumbsUp, FaLeaf } from "react-icons/fa6";
 import hotelHousekeepingPic from '../../assets/hotelHousekeeping.jpg'
 import dishwasherPic from '../../assets/dishwasher.jpg'
+import ResidentialCleaning from '../Services/ResidentialCleaning';
 
 const featuresData = [
   {
@@ -35,12 +36,11 @@ const mainServices = [
 const Services = () => {
   return (
     <div className='w-full flex flex-col items-center mt-20 px-5 md:px-10'>
-      <h1 className='bg-primary-blue w-max px-2.5 py-0.5 mt-5 lg:mt-0 rounded-full font-semibold text-white text-center'>OUR SERVICES</h1>
-      <h1 className='text-2xl font-semibold mt-5 sm:text-3xl lg:text-4xl text-gray-700'>Our Cleaning Services</h1>
+<h1 className='mt-10 text-xl font-semibold text-gray-50 bg-primary-blue px-4 py-0.5 rounded-full'>Our main Services</h1>
       <p className='mt-5 text-gray-400 font-medium w-11/12 sm:w-3/4 md:w-2/4 text-center'>
         We are a professional cleaning company with extensive experience in the cleaning industry. Our staff is well-trained, reliable, and committed to meeting the highest standards in all areas of cleaning. We offer a wide range of services for residential, commercial, and industrial clients. Each service is performed with utmost care and professionalism.
       </p>
-      <h1 className='mt-10 text-3xl font-semibold text-gray-50 bg-primary-blue px-4 py-2.5 rounded-full'>Our main Services</h1>
+      
       <div className='flex items-center justify-center w-full'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-10 mt-10'>
         {mainServices.map((service, index) => (
@@ -60,6 +60,7 @@ const Services = () => {
         ))}
       </div>
       </div>
+      <ResidentialCleaning/>
       <div className='py-20 my-24 grid grid-cols-1 sm:grid-cols-2 rounded-md lg:grid-cols-4 gap-x-5 gap-y-10 bg-[#f4f4f4] px-2'>
         {featuresData.map((feature, index) => (
           <div key={index} className='flex flex-col items-center'>

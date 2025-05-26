@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cleanerone from "../../assets/cleanerone.jpg";
-import cleanertwo from "../../assets/cleanertwo.jpg";
 import cleanerthree from "../../assets/cleanerthree.jpg";
 import cleanerfour from "../../assets/cleanerfour.jpg";
+import cleanertwo from '../../assets/Services/ResidentialCleaning/postConstructionCleaning.jpg'
 
 const About = () => {
   return (
@@ -26,10 +26,10 @@ const About = () => {
           </div>
         </div>
         <div className='w-full md:w-2/4 grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 md:mb-0'>
-          <img src={cleanerone} alt="Reiniger Bild Eins" className='rounded-lg object-cover md:object-center h-40 md:h-full w-full' />
-          <img src={cleanertwo} alt="Reiniger Bild Zwei" className='rounded-lg object-cover md:object-center h-40 md:h-full w-full' />
-          <img src={cleanerthree} alt="Reiniger Bild Drei" className='rounded-lg object-cover md:object-center h-40 md:h-full w-full' />
-          <img src={cleanerfour} alt="Reiniger Bild Vier" className='rounded-lg object-cover md:object-center h-40 md:h-full w-full' />
+          <img src={cleanerone} alt="Reiniger Bild Eins" className='rounded-lg object-cover md:object-center h-40 md:h-52 w-full' />
+          <img src={cleanertwo} alt="Reiniger Bild Zwei" className='rounded-lg object-cover md:object-center h-40 md:h-52 w-full' />
+          <img src={cleanerthree} alt="Reiniger Bild Drei" className='rounded-lg object-cover md:object-center h-40 md:h-52 w-full' />
+          <img src={cleanerfour} alt="Reiniger Bild Vier" className='rounded-lg object-cover md:object-center h-40 md:h-52 w-full' />
         </div>
       </div>
     </div>
